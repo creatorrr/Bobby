@@ -1,0 +1,18 @@
+#######################
+## App Configuration ##
+#######################
+
+# Edit and fill in your preferences before deploying.
+
+application: bobby-diwank-name      # The app id
+version: 1
+runtime: python
+api_version: 1
+
+default_expiration: "30d"
+
+handlers:
+# All requests go to app.py
+
+- url: /.*
+  script: app.py                    # Yippee!
